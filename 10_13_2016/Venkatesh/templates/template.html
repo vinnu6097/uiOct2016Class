@@ -1,0 +1,104 @@
+<!--main document type of the web page-->
+<!DOCTYPE html>
+
+<!--default html language to be english-->
+<html lang="en">
+
+<!--head of the web page-->
+<head>
+    <!--title - this is the title of this html file-->
+    <title>DMV New License Form</title>
+    <!--style - this is used to write CSS style on the html file itself-->
+    <style>
+
+    </style>
+
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <!--script - this is used to write javascript on the html file itself-->
+    <script>
+
+    </script>
+    <!--link - this is used to link an external source-->
+    <!--this is used to source only css files and images-->
+
+
+    <!--base - this used to specify the base URL of our web page-->
+    <!--this is optional and to be written based on server configuration-->
+    <base href="/home" />
+
+    <!--meta - this is used to describe more mata information which are not covered by the above five-->
+    <meta name="description" content="This is the official DMV website for applying license"/>
+    <meta name="keywords" content="DMV, license, license form, form, applicant" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!--body of the web page-->
+<!--body is the rendering part of the html-->
+<body >
+
+<!--main article for forms-->
+<article>
+
+    <!--page header-->
+    <header>
+        <h1>Welcome to my website!</h1>
+    </header>
+
+    <!--main body of the page-->
+    <section>
+        <!--form for new license in dmv-->
+        <form name="newLicenseForm">
+            <!--First Name-->
+
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="fName" placeholder="Enter your First Name"/>
+
+
+
+                <label for="lastName">Applicant's Last Name:</label>
+                <input type="text" id="lastName" name="lName" placeholder="Enter your Last Name" />
+
+
+                <label for="phoneNumber">Applicant's Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number" />
+
+                <label for="email">Applicant's Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" />
+
+                <label for="pwd">Applicant's Password:</label>
+                <input type="password" id="pwd" name="pwd" placeholder="Enter your Password" />
+
+                <label for="gender">Applicant's Gender:</label>
+                <div id="gender">
+                    <!--male-->
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" value="Male"/>
+
+                    <!--female-->
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender" value="Female"/>
+
+
+                <label for="seniorCitizen">Is applicant a senior citizen?</label>
+                <input type="checkbox" id="seniorCitizen" name="seniorCitizen" />
+
+            <!--submit button-->
+            <button type="submit" id="submit" class="btn btn-primary">
+                <span>Submit</span>
+            </button>
+            <!--reset/cancel-->
+            <button type="reset" id="reset" class="btn btn-primary">
+                <span>Cancel</span>
+            </button>
+        </form>
+
+    </section>
+
+    <!--footer of the page-->
+    <footer>
+        I'm at the bottom
+    </footer>
+</article>
+</body>
+</html>
