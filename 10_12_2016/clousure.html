@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <script>
+        function getMeAClosure() {
+    var canYouSeeMe = "here I am";
+    return (function theClosure() {
+        return {canYouSeeIt: canYouSeeMe ? "yes!": "no"};
+    });
+}
+
+var closure = getMeAClosure();
+closure().canYouSeeIt; //"yes!"
+    </script>
+</body>
+</html>

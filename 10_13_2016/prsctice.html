@@ -10,17 +10,16 @@
     <title>DMV New License Form</title>
     <!--style - this is used to write CSS style on the html file itself-->
     <style>
+            body{
+                background-color: #eeeeee;
+            }
+        </style>
 
-    </style>
-
-    <link rel="stylesheet" href="../styles/style.css"/>
-
-    <meta charset="UTF-8" />
 </head>
 
 <!--body of the web page-->
 <!--body is the rendering part of the html-->
-<body >
+<body>
 
 <!--main article for forms-->
 <article>
@@ -35,23 +34,25 @@
         <!--form for new license in dmv-->
         <form name="newLicenseForm">
             <!--First Name-->
-
+            <div>
                 <label for="firstName">Applicant's First Name:</label>
                 <input type="text" id="firstName" name="fName" placeholder="Enter your First Name"/>
-
+            </div>
+            <br />
+            <!--Last Name-->
+            <div>
                 <label for="lastName">Applicant's Last Name:</label>
                 <input type="text" id="lastName" name="lName" placeholder="Enter your Last Name" />
-
-
+            </div>
+            <br />
+            <!--Phone Number-->
+            <div>
                 <label for="phoneNumber">Applicant's Phone Number:</label>
                 <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number" />
-
-                <label for="email">Applicant's Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your Email" />
-
-                <label for="pwd">Applicant's Password:</label>
-                <input type="password" id="pwd" name="pwd" placeholder="Enter your Password" />
-
+            </div>
+            <br />
+            <!--Gender-->
+            <div>
                 <label for="gender">Applicant's Gender:</label>
                 <div id="gender">
                     <!--male-->
@@ -61,17 +62,20 @@
                     <!--female-->
                     <label for="female">Female:</label>
                     <input type="radio" id="female" name="gender" value="Female"/>
-
-
+                </div>
+            </div>
+            <br />
+            <!--senior citizen-->
+            <div>
                 <label for="seniorCitizen">Is applicant a senior citizen?</label>
                 <input type="checkbox" id="seniorCitizen" name="seniorCitizen" />
-
+            </div>
             <!--submit button-->
             <button type="submit" id="submit" class="btn btn-primary">
                 <span>Submit</span>
             </button>
             <!--reset/cancel-->
-            <button type="reset" id="reset" class="btn btn-primary">
+            <button type="reset" id="reset">
                 <span>Cancel</span>
             </button>
         </form>
