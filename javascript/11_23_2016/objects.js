@@ -48,7 +48,7 @@ x['firstName'] = 'Bhumika';
 
 // x -> y -> lastName
 // TODO: THIS WILL NOT WORK
-//x['y['lastName']'] = 'Sirisha';
+//x['y['lastName']'] = 'Sirish      a';
 x.y['lastName'] = 'Sirisha';
 
 // x -> y -> z -> fullName
